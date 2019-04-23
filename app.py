@@ -145,6 +145,8 @@ class FTSEntry(FTSModel):
     class Meta:
         database = database
 
+
+
 def login_required(fn):
     @functools.wraps(fn)
     def inner(*args, **kwargs):
